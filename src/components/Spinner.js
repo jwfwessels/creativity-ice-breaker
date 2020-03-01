@@ -25,15 +25,29 @@ const ItemWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   font-family: sans-serif;
-  font-size: 2em;
+  font-size: 1em;
+  width: 6em;
+  margin: 1em;
+
+  @media (min-width: 768) {
+    font-size: 2em;
+    width: 6em;
+  }
 `
 const StyledImage = styled.img`
-  width: 7rem;
+  width: 5rem;
   margin-bottom: 1em;
+
+  @media (min-width: 768) {
+    width: 7rem;
+  }
 `
 const Plus = styled.div`
-  font-size: 6em;
+  font-size: 4em;
   font-weight: 700;
+  @media (min-width: 768) {
+    font-size: 6em;
+  }
 `
 
 const Slot = ({ ImagesOptions, result, loops }) => {
